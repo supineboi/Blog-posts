@@ -1,0 +1,100 @@
+body{
+    scroll-behavior: smooth;
+    background-color: gainsboro;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+    background: linear-gradient(90deg,black,transparent);
+}
+
+.bLogo {
+    transition: 5s;
+}
+
+.bLogo:hover {
+    transform: rotateY(360deg);
+}
+
+.name {
+    font-size: small;
+    font-style: italic;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.name:hover {
+    font-size: large;
+}
+
+/* BLOG POST CARDS ========================== */
+.blog-posts-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.local-card {
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+.local-card:hover {
+    box-shadow: 2px 2px 2px 0 black ;
+}
+
+.local-card-title {
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.local-card-text {
+    font-style: italic;
+    padding: 5px;
+}
+
+.local-card-footer {
+    font-weight: bold;
+}
+
+.local-card-footer:hover {
+    letter-spacing: 5px;
+    color: whitesmoke;
+    background-color: rgb(52, 51, 51);
+}
+
+/* CUSTOM CSS LOADER ====================== */
+.load-container {
+    position: relative;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.loader {
+    display: none;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    --rotator : 0deg;
+    height: 50px;
+    width: 50px;
+    border: 5px dashed black;
+    margin: 10px auto;
+    border-radius: 100%;
+    transform: rotate(var(--rotator));
+    text-align: center;
+}
+
+.loading {
+    position: absolute;
+    left: 50.6%;
+    right: 50%;
+    font-size: 8px;
+    font-weight: bold;
+    top: 27px;
+}
